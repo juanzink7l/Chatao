@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+    <style>
+        body {
+            background-color: #111827;
+        }
+        .cadastro-container h1 {
+            display: flex;
+            justify-content: center;
+            color: rgb(7, 7, 7);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        }
+
+        .cadastro-container {
+            width: 350px;
+            margin: 80px auto;
+            background-color: rgb(3, 54, 131);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px black;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cadastro-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .cadastro-container input {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .cadastro-container button {
+            padding: 12px;
+            background-color: lightskyblue;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+<body>
+    <div class="cadastro-container">
+        <h1>Cadastro no Chatão</h1>
+        <form action="">
+            <label for="nome_completo"></label>
+            <input type="text" placeholder="Nome completo" id="nome_completo" required>
+
+            <label for="nome_usuario"></label>
+            <input type="text" placeholder="Nome de usuário" id="nome_usuario" required>
+
+            <label for="email"></label>
+            <input type="email" placeholder="Digite seu Email" id="email" required>
+
+            <label for="senha"></label>
+            <input type="password" placeholder="Digite sua senha" id="senha" required>
+
+            <label for="confirmar_senha"></label>
+            <input type="password" placeholder="Confirme sua senha" id="confirmar_senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
